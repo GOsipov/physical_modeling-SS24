@@ -40,12 +40,38 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "live.dial",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 929.123699903488159, 157.814438939094543, 41.0, 48.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_initial" : [ 0.991 ],
+							"parameter_initial_enable" : 1,
+							"parameter_longname" : "live.dial[1]",
+							"parameter_mmax" : 0.99,
+							"parameter_shortname" : "feedback",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 1
+						}
+
+					}
+,
+					"varname" : "live.dial[1]"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-66",
 					"linecount" : 5,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1129.0, 90.0, 150.0, 74.0 ],
+					"patching_rect" : [ 1129.0, 90.0, 151.0, 74.0 ],
 					"text" : "with allpass filter we can rotate the phases of the higher freq FORWARD so the will arrive to the listner faster"
 				}
 
@@ -53,11 +79,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-64",
-					"linecount" : 8,
+					"linecount" : 6,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 937.0, 11.5, 150.0, 114.0 ],
+					"patching_rect" : [ 937.0, 11.5, 157.0, 87.0 ],
 					"text" : "The AP is a phase rotator...\n\nIn Stiff string, like piano strings, the hight freq travel faster than hte lower freq along the lengs of the string"
 				}
 
@@ -118,23 +144,75 @@
 					"patching_rect" : [ 987.0, 143.0, 100.0, 40.0 ],
 					"preset_data" : [ 						{
 							"number" : 1,
-							"data" : [ 5, "obj-12", "flonum", "float", -3.0, 4, "obj-16", "function", "clear", 7, "obj-16", "function", "add", 0.0, 0.026666666666667, 0, 7, "obj-16", "function", "add", 2.659574468085106, 1.0, 0, 7, "obj-16", "function", "add", 9.042553191489361, 0.16, 0, 7, "obj-16", "function", "add", 51.595744680851062, 0.066666666666667, 0, 7, "obj-16", "function", "add", 100.0, 0.0, 0, 5, "obj-16", "function", "domain", 100.0, 6, "obj-16", "function", "range", 0.0, 1.0, 5, "obj-16", "function", "mode", 0, 5, "obj-26", "toggle", "int", 1, 5, "obj-29", "live.gain~", "float", -70.0, 5, "obj-33", "flonum", "float", 220.0, 5, "obj-38", "flonum", "float", 0.99099999666214, 5, "obj-42", "live.dial", "float", 0.99099999666214, 5, "obj-48", "live.gain~", "float", 0.0, 5, "obj-49", "flonum", "float", 0.990000009536743, 5, "obj-51", "flonum", "float", 1.0 ]
+							"data" : [ 5, "obj-12", "flonum", "float", -3.0, 4, "obj-16", "function", "clear", 7, "obj-16", "function", "add", 0.0, 0.026666666666667, 0, 7, "obj-16", "function", "add", 2.659574468085106, 1.0, 0, 7, "obj-16", "function", "add", 9.042553191489361, 0.16, 0, 7, "obj-16", "function", "add", 51.595744680851062, 0.066666666666667, 0, 7, "obj-16", "function", "add", 100.0, 0.0, 0, 5, "obj-16", "function", "domain", 100.0, 6, "obj-16", "function", "range", 0.0, 1.0, 5, "obj-16", "function", "mode", 0, 5, "obj-26", "toggle", "int", 1, 5, "obj-29", "live.gain~", "float", -36.488189697265625, 5, "obj-33", "flonum", "float", 220.0, 5, "obj-38", "flonum", "float", 0.99099999666214, 5, "obj-42", "live.dial", "float", 0.99099999666214, 5, "obj-48", "live.gain~", "float", -32.227127075195312, 5, "obj-49", "flonum", "float", 0.990000009536743, 5, "obj-51", "flonum", "float", 1.0 ]
 						}
 , 						{
 							"number" : 2,
-							"data" : [ 5, "obj-12", "flonum", "float", -3.0, 4, "obj-16", "function", "clear", 7, "obj-16", "function", "add", 0.0, 0.026666666666667, 0, 7, "obj-16", "function", "add", 2.659574468085106, 1.0, 0, 7, "obj-16", "function", "add", 9.042553191489361, 0.16, 0, 7, "obj-16", "function", "add", 51.595744680851062, 0.066666666666667, 0, 7, "obj-16", "function", "add", 100.0, 0.0, 0, 5, "obj-16", "function", "domain", 100.0, 6, "obj-16", "function", "range", 0.0, 1.0, 5, "obj-16", "function", "mode", 0, 5, "obj-26", "toggle", "int", 1, 5, "obj-29", "live.gain~", "float", -70.0, 5, "obj-33", "flonum", "float", 220.0, 5, "obj-38", "flonum", "float", 0.976377964019775, 5, "obj-42", "live.dial", "float", 0.976377964019775, 5, "obj-48", "live.gain~", "float", -8.343209266662598, 5, "obj-49", "flonum", "float", 0.670000016689301, 5, "obj-51", "flonum", "float", 13.5 ]
+							"data" : [ 5, "obj-12", "flonum", "float", -3.0, 4, "obj-16", "function", "clear", 7, "obj-16", "function", "add", 0.0, 0.026666666666667, 0, 7, "obj-16", "function", "add", 2.659574468085106, 1.0, 0, 7, "obj-16", "function", "add", 9.042553191489361, 0.16, 0, 7, "obj-16", "function", "add", 51.595744680851062, 0.066666666666667, 0, 7, "obj-16", "function", "add", 100.0, 0.0, 0, 5, "obj-16", "function", "domain", 100.0, 6, "obj-16", "function", "range", 0.0, 1.0, 5, "obj-16", "function", "mode", 0, 5, "obj-26", "toggle", "int", 0, 5, "obj-29", "live.gain~", "float", -10.595990180969238, 5, "obj-33", "flonum", "float", 24.0, 5, "obj-38", "flonum", "float", 0.84968501329422, 5, "obj-42", "live.dial", "float", 0.84968501329422, 5, "obj-48", "live.gain~", "float", -10.226317405700684, 5, "obj-49", "flonum", "float", 0.80291336774826, 5, "obj-51", "flonum", "float", 10.0, 5, "obj-4", "live.dial", "float", 0.80291336774826 ]
 						}
 , 						{
 							"number" : 3,
-							"data" : [ 5, "obj-12", "flonum", "float", -3.0, 4, "obj-16", "function", "clear", 7, "obj-16", "function", "add", 0.0, 0.026666666666667, 0, 7, "obj-16", "function", "add", 2.659574468085106, 1.0, 0, 7, "obj-16", "function", "add", 9.042553191489361, 0.16, 0, 7, "obj-16", "function", "add", 51.595744680851062, 0.066666666666667, 0, 7, "obj-16", "function", "add", 100.0, 0.0, 0, 5, "obj-16", "function", "domain", 100.0, 6, "obj-16", "function", "range", 0.0, 1.0, 5, "obj-16", "function", "mode", 0, 5, "obj-26", "toggle", "int", 1, 5, "obj-29", "live.gain~", "float", -70.0, 5, "obj-33", "flonum", "float", 220.0, 5, "obj-38", "flonum", "float", 0.976377964019775, 5, "obj-42", "live.dial", "float", 0.976377964019775, 5, "obj-48", "live.gain~", "float", -8.343209266662598, 5, "obj-49", "flonum", "float", 0.670000016689301, 5, "obj-51", "flonum", "float", 171.0 ]
+							"data" : [ 5, "obj-12", "flonum", "float", -3.0, 4, "obj-16", "function", "clear", 7, "obj-16", "function", "add", 0.0, 0.026666666666667, 0, 7, "obj-16", "function", "add", 2.659574468085106, 1.0, 0, 7, "obj-16", "function", "add", 9.042553191489361, 0.16, 0, 7, "obj-16", "function", "add", 51.595744680851062, 0.066666666666667, 0, 7, "obj-16", "function", "add", 100.0, 0.0, 0, 5, "obj-16", "function", "domain", 100.0, 6, "obj-16", "function", "range", 0.0, 1.0, 5, "obj-16", "function", "mode", 0, 5, "obj-26", "toggle", "int", 0, 5, "obj-29", "live.gain~", "float", -5.977149963378906, 5, "obj-33", "flonum", "float", 220.0, 5, "obj-38", "flonum", "float", 0.976377964019775, 5, "obj-42", "live.dial", "float", 0.976377964019775, 5, "obj-48", "live.gain~", "float", -24.007793426513672, 5, "obj-49", "flonum", "float", 0.545669317245483, 5, "obj-51", "flonum", "float", 171.0, 5, "obj-4", "live.dial", "float", 0.545669317245483 ]
 						}
 , 						{
 							"number" : 4,
-							"data" : [ 5, "obj-12", "flonum", "float", -3.0, 4, "obj-16", "function", "clear", 7, "obj-16", "function", "add", 0.0, 0.026666666666667, 0, 7, "obj-16", "function", "add", 2.659574468085106, 1.0, 0, 7, "obj-16", "function", "add", 9.042553191489361, 0.16, 0, 7, "obj-16", "function", "add", 51.595744680851062, 0.066666666666667, 0, 7, "obj-16", "function", "add", 100.0, 0.0, 0, 5, "obj-16", "function", "domain", 100.0, 6, "obj-16", "function", "range", 0.0, 1.0, 5, "obj-16", "function", "mode", 0, 5, "obj-26", "toggle", "int", 1, 5, "obj-29", "live.gain~", "float", -70.0, 5, "obj-33", "flonum", "float", 204.0, 5, "obj-38", "flonum", "float", 0.976377964019775, 5, "obj-42", "live.dial", "float", 0.976377964019775, 5, "obj-48", "live.gain~", "float", -8.343209266662598, 5, "obj-49", "flonum", "float", 0.600000023841858, 5, "obj-51", "flonum", "float", 719.0 ]
+							"data" : [ 5, "obj-12", "flonum", "float", -3.0, 4, "obj-16", "function", "clear", 7, "obj-16", "function", "add", 0.0, 0.026666666666667, 0, 7, "obj-16", "function", "add", 2.659574468085106, 1.0, 0, 7, "obj-16", "function", "add", 9.042553191489361, 0.16, 0, 7, "obj-16", "function", "add", 51.595744680851062, 0.066666666666667, 0, 7, "obj-16", "function", "add", 100.0, 0.0, 0, 5, "obj-16", "function", "domain", 100.0, 6, "obj-16", "function", "range", 0.0, 1.0, 5, "obj-16", "function", "mode", 0, 5, "obj-26", "toggle", "int", 0, 5, "obj-29", "live.gain~", "float", -70.0, 5, "obj-33", "flonum", "float", 387.0, 5, "obj-38", "flonum", "float", 0.859448850154877, 5, "obj-42", "live.dial", "float", 0.859448850154877, 5, "obj-48", "live.gain~", "float", -9.053279876708984, 5, "obj-49", "flonum", "float", 0.873070895671844, 5, "obj-51", "flonum", "float", 1199.0, 5, "obj-4", "live.dial", "float", 0.873070895671844 ]
 						}
 , 						{
 							"number" : 5,
 							"data" : [ 5, "obj-12", "flonum", "float", -3.0, 4, "obj-16", "function", "clear", 7, "obj-16", "function", "add", 0.0, 0.026666666666667, 0, 7, "obj-16", "function", "add", 2.659574468085106, 1.0, 0, 7, "obj-16", "function", "add", 9.042553191489361, 0.16, 0, 7, "obj-16", "function", "add", 51.595744680851062, 0.066666666666667, 0, 7, "obj-16", "function", "add", 100.0, 0.0, 0, 5, "obj-16", "function", "domain", 100.0, 6, "obj-16", "function", "range", 0.0, 1.0, 5, "obj-16", "function", "mode", 0, 5, "obj-26", "toggle", "int", 0, 5, "obj-29", "live.gain~", "float", -70.0, 5, "obj-33", "flonum", "float", 220.0, 5, "obj-38", "flonum", "float", 0.99099999666214, 5, "obj-42", "live.dial", "float", 0.99099999666214, 5, "obj-48", "live.gain~", "float", -21.425992965698242, 5, "obj-49", "flonum", "float", 0.990000009536743, 5, "obj-51", "flonum", "float", 97572.0 ]
+						}
+, 						{
+							"number" : 6,
+							"data" : [ 5, "obj-12", "flonum", "float", -3.0, 4, "obj-16", "function", "clear", 7, "obj-16", "function", "add", 0.0, 0.026666666666667, 0, 7, "obj-16", "function", "add", 2.659574468085106, 1.0, 0, 7, "obj-16", "function", "add", 9.042553191489361, 0.16, 0, 7, "obj-16", "function", "add", 51.595744680851062, 0.066666666666667, 0, 7, "obj-16", "function", "add", 100.0, 0.0, 0, 5, "obj-16", "function", "domain", 100.0, 6, "obj-16", "function", "range", 0.0, 1.0, 5, "obj-16", "function", "mode", 0, 5, "obj-26", "toggle", "int", 1, 5, "obj-29", "live.gain~", "float", -36.488189697265625, 5, "obj-33", "flonum", "float", 880.0, 5, "obj-38", "flonum", "float", 0.990000009536743, 5, "obj-42", "live.dial", "float", 0.990000009536743, 5, "obj-48", "live.gain~", "float", -18.375516891479492, 5, "obj-49", "flonum", "float", 0.779527604579926, 5, "obj-51", "flonum", "float", 1.0, 5, "obj-4", "live.dial", "float", 0.779527604579926 ]
+						}
+, 						{
+							"number" : 7,
+							"data" : [ 5, "obj-12", "flonum", "float", -3.0, 4, "obj-16", "function", "clear", 7, "obj-16", "function", "add", 0.0, 0.026666666666667, 0, 7, "obj-16", "function", "add", 2.659574468085106, 1.0, 0, 7, "obj-16", "function", "add", 9.042553191489361, 0.16, 0, 7, "obj-16", "function", "add", 51.595744680851062, 0.066666666666667, 0, 7, "obj-16", "function", "add", 100.0, 0.0, 0, 5, "obj-16", "function", "domain", 100.0, 6, "obj-16", "function", "range", 0.0, 1.0, 5, "obj-16", "function", "mode", 0, 5, "obj-26", "toggle", "int", 0, 5, "obj-29", "live.gain~", "float", -15.9405517578125, 5, "obj-33", "flonum", "float", 51.0, 5, "obj-38", "flonum", "float", 0.966614127159119, 5, "obj-42", "live.dial", "float", 0.966614127159119, 5, "obj-48", "live.gain~", "float", -21.394130706787109, 5, "obj-49", "flonum", "float", 0.990000009536743, 5, "obj-51", "flonum", "float", 2591.0, 5, "obj-4", "live.dial", "float", 0.990000009536743 ]
+						}
+, 						{
+							"number" : 8,
+							"data" : [ 5, "obj-12", "flonum", "float", -3.0, 4, "obj-16", "function", "clear", 7, "obj-16", "function", "add", 0.0, 0.026666666666667, 0, 7, "obj-16", "function", "add", 2.659574468085106, 1.0, 0, 7, "obj-16", "function", "add", 9.042553191489361, 0.16, 0, 7, "obj-16", "function", "add", 51.595744680851062, 0.066666666666667, 0, 7, "obj-16", "function", "add", 100.0, 0.0, 0, 5, "obj-16", "function", "domain", 100.0, 6, "obj-16", "function", "range", 0.0, 1.0, 5, "obj-16", "function", "mode", 0, 5, "obj-26", "toggle", "int", 0, 5, "obj-29", "live.gain~", "float", -36.488189697265625, 5, "obj-33", "flonum", "float", 1100.0, 5, "obj-38", "flonum", "float", 0.990000009536743, 5, "obj-42", "live.dial", "float", 0.990000009536743, 5, "obj-48", "live.gain~", "float", -31.551107406616211, 5, "obj-49", "flonum", "float", 0.927637815475464, 5, "obj-51", "flonum", "float", 10000.0, 5, "obj-4", "live.dial", "float", 0.927637815475464 ]
+						}
+, 						{
+							"number" : 9,
+							"data" : [ 5, "obj-12", "flonum", "float", -3.0, 4, "obj-16", "function", "clear", 7, "obj-16", "function", "add", 0.0, 0.026666666666667, 0, 7, "obj-16", "function", "add", 2.659574468085106, 1.0, 0, 7, "obj-16", "function", "add", 9.042553191489361, 0.16, 0, 7, "obj-16", "function", "add", 51.595744680851062, 0.066666666666667, 0, 7, "obj-16", "function", "add", 100.0, 0.0, 0, 5, "obj-16", "function", "domain", 100.0, 6, "obj-16", "function", "range", 0.0, 1.0, 5, "obj-16", "function", "mode", 0, 5, "obj-26", "toggle", "int", 1, 5, "obj-29", "live.gain~", "float", -26.507671356201172, 5, "obj-33", "flonum", "float", 5.0, 5, "obj-38", "flonum", "float", 0.990000009536743, 5, "obj-42", "live.dial", "float", 0.990000009536743, 5, "obj-48", "live.gain~", "float", -45.885379791259766, 5, "obj-49", "flonum", "float", 0.990000009536743, 5, "obj-51", "flonum", "float", 4.0, 5, "obj-4", "live.dial", "float", 0.990000009536743 ]
+						}
+, 						{
+							"number" : 10,
+							"data" : [ 5, "obj-12", "flonum", "float", -3.0, 4, "obj-16", "function", "clear", 7, "obj-16", "function", "add", 0.0, 0.026666666666667, 0, 7, "obj-16", "function", "add", 2.659574468085106, 1.0, 0, 7, "obj-16", "function", "add", 9.042553191489361, 0.16, 0, 7, "obj-16", "function", "add", 51.595744680851062, 0.066666666666667, 0, 7, "obj-16", "function", "add", 100.0, 0.0, 0, 5, "obj-16", "function", "domain", 100.0, 6, "obj-16", "function", "range", 0.0, 1.0, 5, "obj-16", "function", "mode", 0, 5, "obj-26", "toggle", "int", 1, 5, "obj-29", "live.gain~", "float", -26.507671356201172, 5, "obj-33", "flonum", "float", 9.0, 5, "obj-38", "flonum", "float", 0.990000009536743, 5, "obj-42", "live.dial", "float", 0.990000009536743, 5, "obj-48", "live.gain~", "float", -45.885379791259766, 5, "obj-49", "flonum", "float", 0.990000009536743, 5, "obj-51", "flonum", "float", 4.0, 5, "obj-4", "live.dial", "float", 0.990000009536743 ]
+						}
+, 						{
+							"number" : 11,
+							"data" : [ 5, "obj-12", "flonum", "float", -3.0, 4, "obj-16", "function", "clear", 7, "obj-16", "function", "add", 0.0, 0.026666666666667, 0, 7, "obj-16", "function", "add", 2.659574468085106, 1.0, 0, 7, "obj-16", "function", "add", 13.829787234042554, 0.72, 0, 7, "obj-16", "function", "add", 51.595744680851062, 0.066666666666667, 0, 7, "obj-16", "function", "add", 100.0, 0.0, 0, 5, "obj-16", "function", "domain", 100.0, 6, "obj-16", "function", "range", 0.0, 1.0, 5, "obj-16", "function", "mode", 0, 5, "obj-26", "toggle", "int", 1, 5, "obj-29", "live.gain~", "float", -26.913385391235352, 5, "obj-33", "flonum", "float", 28.0, 5, "obj-38", "flonum", "float", 0.990000009536743, 5, "obj-42", "live.dial", "float", 0.990000009536743, 5, "obj-48", "live.gain~", "float", -45.885379791259766, 5, "obj-49", "flonum", "float", 0.990000009536743, 5, "obj-51", "flonum", "float", 160.0, 5, "obj-4", "live.dial", "float", 0.990000009536743 ]
+						}
+, 						{
+							"number" : 12,
+							"data" : [ 5, "obj-12", "flonum", "float", -3.0, 4, "obj-16", "function", "clear", 7, "obj-16", "function", "add", 0.0, 0.026666666666667, 0, 7, "obj-16", "function", "add", 2.659574468085106, 1.0, 0, 7, "obj-16", "function", "add", 27.659574468085108, 0.933333333333333, 0, 7, "obj-16", "function", "add", 51.595744680851062, 0.066666666666667, 0, 7, "obj-16", "function", "add", 100.0, 0.0, 0, 5, "obj-16", "function", "domain", 100.0, 6, "obj-16", "function", "range", 0.0, 1.0, 5, "obj-16", "function", "mode", 0, 5, "obj-26", "toggle", "int", 1, 5, "obj-29", "live.gain~", "float", -26.913385391235352, 5, "obj-33", "flonum", "float", 35.0, 5, "obj-38", "flonum", "float", 0.990000009536743, 5, "obj-42", "live.dial", "float", 0.990000009536743, 5, "obj-48", "live.gain~", "float", -45.885379791259766, 5, "obj-49", "flonum", "float", 0.990000009536743, 5, "obj-51", "flonum", "float", 160.0, 5, "obj-4", "live.dial", "float", 0.990000009536743 ]
+						}
+, 						{
+							"number" : 13,
+							"data" : [ 5, "obj-12", "flonum", "float", -3.0, 4, "obj-16", "function", "clear", 7, "obj-16", "function", "add", 0.0, 0.026666666666667, 0, 7, "obj-16", "function", "add", 2.659574468085106, 1.0, 0, 7, "obj-16", "function", "add", 51.595744680851062, 0.36, 0, 7, "obj-16", "function", "add", 74.468085106382972, 0.32, 0, 7, "obj-16", "function", "add", 100.0, 0.0, 0, 5, "obj-16", "function", "domain", 100.0, 6, "obj-16", "function", "range", 0.0, 1.0, 5, "obj-16", "function", "mode", 0, 5, "obj-26", "toggle", "int", 1, 5, "obj-29", "live.gain~", "float", -26.913385391235352, 5, "obj-33", "flonum", "float", 35.0, 5, "obj-38", "flonum", "float", 0.990000009536743, 5, "obj-42", "live.dial", "float", 0.990000009536743, 5, "obj-48", "live.gain~", "float", -45.885379791259766, 5, "obj-49", "flonum", "float", 0.990000009536743, 5, "obj-51", "flonum", "float", 2803.0, 5, "obj-4", "live.dial", "float", 0.990000009536743 ]
+						}
+, 						{
+							"number" : 14,
+							"data" : [ 5, "obj-12", "flonum", "float", -3.0, 4, "obj-16", "function", "clear", 7, "obj-16", "function", "add", 0.0, 0.026666666666667, 0, 7, "obj-16", "function", "add", 2.659574468085106, 1.0, 0, 7, "obj-16", "function", "add", 51.595744680851062, 0.36, 0, 7, "obj-16", "function", "add", 74.468085106382972, 0.32, 0, 7, "obj-16", "function", "add", 100.0, 0.0, 0, 5, "obj-16", "function", "domain", 100.0, 6, "obj-16", "function", "range", 0.0, 1.0, 5, "obj-16", "function", "mode", 0, 5, "obj-26", "toggle", "int", 1, 5, "obj-29", "live.gain~", "float", -26.913385391235352, 5, "obj-33", "flonum", "float", 92.0, 5, "obj-38", "flonum", "float", 0.990000009536743, 5, "obj-42", "live.dial", "float", 0.990000009536743, 5, "obj-48", "live.gain~", "float", -45.885379791259766, 5, "obj-49", "flonum", "float", 0.990000009536743, 5, "obj-51", "flonum", "float", 2803.0, 5, "obj-4", "live.dial", "float", 0.990000009536743 ]
+						}
+, 						{
+							"number" : 15,
+							"data" : [ 5, "obj-12", "flonum", "float", -3.0, 4, "obj-16", "function", "clear", 7, "obj-16", "function", "add", 0.0, 0.026666666666667, 0, 7, "obj-16", "function", "add", 2.659574468085106, 1.0, 0, 7, "obj-16", "function", "add", 51.595744680851062, 0.36, 0, 7, "obj-16", "function", "add", 74.468085106382972, 0.32, 0, 7, "obj-16", "function", "add", 100.0, 0.0, 0, 5, "obj-16", "function", "domain", 100.0, 6, "obj-16", "function", "range", 0.0, 1.0, 5, "obj-16", "function", "mode", 0, 5, "obj-26", "toggle", "int", 1, 5, "obj-29", "live.gain~", "float", -26.913385391235352, 5, "obj-33", "flonum", "float", 92.0, 5, "obj-38", "flonum", "float", 0.990000009536743, 5, "obj-42", "live.dial", "float", 0.990000009536743, 5, "obj-48", "live.gain~", "float", -45.885379791259766, 5, "obj-49", "flonum", "float", 0.990000009536743, 5, "obj-51", "flonum", "float", 9794.0, 5, "obj-4", "live.dial", "float", 0.990000009536743 ]
+						}
+, 						{
+							"number" : 16,
+							"data" : [ 5, "obj-12", "flonum", "float", -3.0, 4, "obj-16", "function", "clear", 7, "obj-16", "function", "add", 0.0, 0.026666666666667, 0, 7, "obj-16", "function", "add", 2.659574468085106, 1.0, 0, 7, "obj-16", "function", "add", 51.595744680851062, 0.36, 0, 7, "obj-16", "function", "add", 74.468085106382972, 0.32, 0, 7, "obj-16", "function", "add", 100.0, 0.0, 0, 5, "obj-16", "function", "domain", 100.0, 6, "obj-16", "function", "range", 0.0, 1.0, 5, "obj-16", "function", "mode", 0, 5, "obj-26", "toggle", "int", 1, 5, "obj-29", "live.gain~", "float", -26.913385391235352, 5, "obj-33", "flonum", "float", 6.0, 5, "obj-38", "flonum", "float", 0.990000009536743, 5, "obj-42", "live.dial", "float", 0.990000009536743, 5, "obj-48", "live.gain~", "float", -45.885379791259766, 5, "obj-49", "flonum", "float", 0.0, 5, "obj-51", "flonum", "float", 1.0, 5, "obj-4", "live.dial", "float", 0.0 ]
+						}
+, 						{
+							"number" : 17,
+							"data" : [ 5, "obj-12", "flonum", "float", -3.0, 4, "obj-16", "function", "clear", 7, "obj-16", "function", "add", 0.0, 0.026666666666667, 0, 7, "obj-16", "function", "add", 2.659574468085106, 1.0, 0, 7, "obj-16", "function", "add", 6.382978723404255, 0.013333333333333, 0, 7, "obj-16", "function", "add", 64.893617021276597, 0.0, 0, 7, "obj-16", "function", "add", 100.0, 0.0, 0, 5, "obj-16", "function", "domain", 100.0, 6, "obj-16", "function", "range", 0.0, 1.0, 5, "obj-16", "function", "mode", 0, 5, "obj-26", "toggle", "int", 1, 5, "obj-29", "live.gain~", "float", -26.913385391235352, 5, "obj-33", "flonum", "float", 369.0, 5, "obj-38", "flonum", "float", 0.748346447944641, 5, "obj-42", "live.dial", "float", 0.748346447944641, 5, "obj-48", "live.gain~", "float", -45.885379791259766, 5, "obj-49", "flonum", "float", 0.85748028755188, 5, "obj-51", "flonum", "float", 6550.0, 5, "obj-4", "live.dial", "float", 0.85748028755188 ]
+						}
+, 						{
+							"number" : 18,
+							"data" : [ 5, "obj-12", "flonum", "float", -3.0, 4, "obj-16", "function", "clear", 7, "obj-16", "function", "add", 0.0, 0.026666666666667, 0, 7, "obj-16", "function", "add", 2.659574468085106, 1.0, 0, 7, "obj-16", "function", "add", 3.191489361702128, 0.653333333333333, 0, 7, "obj-16", "function", "add", 64.893617021276597, 0.0, 0, 7, "obj-16", "function", "add", 100.0, 0.0, 0, 5, "obj-16", "function", "domain", 100.0, 6, "obj-16", "function", "range", 0.0, 1.0, 5, "obj-16", "function", "mode", 0, 5, "obj-26", "toggle", "int", 1, 5, "obj-29", "live.gain~", "float", -26.913385391235352, 5, "obj-33", "flonum", "float", 375.0, 5, "obj-38", "flonum", "float", 0.748346447944641, 5, "obj-42", "live.dial", "float", 0.748346447944641, 5, "obj-48", "live.gain~", "float", -45.885379791259766, 5, "obj-49", "flonum", "float", 0.85748028755188, 5, "obj-51", "flonum", "float", 14502.0, 5, "obj-4", "live.dial", "float", 0.85748028755188 ]
 						}
  ]
 				}
@@ -208,7 +286,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 952.0, 282.0, 41.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "AP $1"
 				}
 
@@ -248,7 +325,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 918.0, 424.0, 129.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "gen~ stiff-string-AP-LP"
 				}
 
@@ -290,7 +366,7 @@
 							"parameter_initial" : [ 0.991 ],
 							"parameter_initial_enable" : 1,
 							"parameter_longname" : "live.dial",
-							"parameter_mmax" : 1.0,
+							"parameter_mmax" : 0.99,
 							"parameter_shortname" : "feedback",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1
@@ -805,6 +881,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-49", 0 ],
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-38", 0 ],
 					"source" : [ "obj-42", 0 ]
 				}
@@ -918,6 +1001,7 @@
  ],
 		"parameters" : 		{
 			"obj-29" : [ "live.gain~", "LP filter", 0 ],
+			"obj-4" : [ "live.dial[1]", "feedback", 0 ],
 			"obj-42" : [ "live.dial", "feedback", 0 ],
 			"obj-48" : [ "live.gain~[1]", "AP + LP", 0 ],
 			"parameterbanks" : 			{
@@ -935,14 +1019,14 @@
 		"dependency_cache" : [ 			{
 				"name" : "Karplus-Strong.gendsp",
 				"bootpath" : "~/Desktop/Studio methods/_Classes/physical_modeling-SS24/week-05-karplus-strong",
-				"patcherrelativepath" : ".",
+				"patcherrelativepath" : "../week-05-karplus-strong",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "stiff-string-AP-LP.gendsp",
 				"bootpath" : "~/Desktop/Studio methods/_Classes/physical_modeling-SS24/week-05-karplus-strong",
-				"patcherrelativepath" : ".",
+				"patcherrelativepath" : "../week-05-karplus-strong",
 				"type" : "gDSP",
 				"implicit" : 1
 			}

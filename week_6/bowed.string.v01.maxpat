@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 59.0, 119.0, 640.0, 480.0 ],
+		"rect" : [ 34.0, 100.0, 1202.0, 780.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,66 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-79",
+					"linecount" : 9,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 661.0, 348.666678547859192, 150.0, 127.0 ],
+					"text" : "6 - lowpass lowpass\n\n8 - nice dist low not ugly\n9 - немножечко грязь\n10 - очень грязь\n11 - низко и плоско\n12 - если без скейла - граанулированный бас\n13 - без скейла збс"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-75",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 498.0, 146.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-24",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 544.0, 735.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 434.250007450580597, 612.833348035812378, 125.0, 22.0 ],
+					"text" : "0.05 10000 0.95 5000"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"patching_rect" : [ 443.0, 666.0, 40.0, 22.0 ],
+					"text" : "line"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-1",
 					"maxclass" : "preset",
 					"numinlets" : 1,
@@ -48,7 +108,55 @@
 					"patching_rect" : [ 770.0, 285.0, 100.0, 40.0 ],
 					"preset_data" : [ 						{
 							"number" : 1,
-							"data" : [ 5, "obj-29", "live.gain~", "float", 0.0, 5, "obj-9", "live.slider", "float", 0.347866714000702, 5, "obj-16", "filtergraph~", "nfilters", 1, 9, "obj-16", "filtergraph~", "setoptions", 0, 1, 1, 0, 0, 8, "obj-16", "filtergraph~", "params", 0, 5000.0, 0.768420875072479, 0.5, 5, "obj-19", "attrui", "attr", "edit_mode", 5, "obj-19", "attrui", "int", 1, 5, "obj-23", "flonum", "float", 5000.0, 5, "obj-25", "flonum", "float", 0.5, 5, "obj-35", "filtergraph~", "nfilters", 1, 9, "obj-35", "filtergraph~", "setoptions", 0, 1, 1, 0, 0, 8, "obj-35", "filtergraph~", "params", 0, 5000.0, 0.768420875072479, 0.5, 5, "obj-33", "attrui", "attr", "edit_mode", 5, "obj-33", "attrui", "int", 1, 5, "obj-31", "flonum", "float", 5000.0, 5, "obj-30", "flonum", "float", 0.5, 5, "obj-39", "flonum", "float", 261.625579833984375, 5, "obj-45", "flonum", "float", 0.680000007152557, 5, "obj-53", "flonum", "float", 0.180000007152557, 5, "obj-55", "flonum", "float", 0.056000001728535, 5, "obj-59", "flonum", "float", 0.264999985694885, 5, "obj-61", "kslider", "int", 60 ]
+							"data" : [ 5, "obj-29", "live.gain~", "float", -20.745615005493164, 5, "obj-9", "live.slider", "float", 0.347866714000702, 5, "obj-16", "filtergraph~", "nfilters", 1, 9, "obj-16", "filtergraph~", "setoptions", 0, 1, 1, 0, 0, 8, "obj-16", "filtergraph~", "params", 0, 391.169708251953125, 4.518402099609375, 0.5, 5, "obj-19", "attrui", "attr", "edit_mode", 5, "obj-19", "attrui", "int", 1, 5, "obj-23", "flonum", "float", 5000.0, 5, "obj-25", "flonum", "float", 0.5, 5, "obj-35", "filtergraph~", "nfilters", 1, 9, "obj-35", "filtergraph~", "setoptions", 0, 1, 1, 0, 0, 8, "obj-35", "filtergraph~", "params", 0, 5000.0, 0.768420875072479, 0.5, 5, "obj-33", "attrui", "attr", "edit_mode", 5, "obj-33", "attrui", "int", 1, 5, "obj-31", "flonum", "float", 5000.0, 5, "obj-30", "flonum", "float", 0.5, 5, "obj-39", "flonum", "float", 261.625579833984375, 5, "obj-45", "flonum", "float", 0.680000007152557, 5, "obj-53", "flonum", "float", 0.180000007152557, 5, "obj-55", "flonum", "float", 0.056000001728535, 5, "obj-59", "flonum", "float", 0.264999985694885, 5, "obj-61", "kslider", "int", 60 ]
+						}
+, 						{
+							"number" : 2,
+							"data" : [ 5, "obj-29", "live.gain~", "float", -20.745615005493164, 5, "obj-9", "live.slider", "float", 0.347866714000702, 5, "obj-16", "filtergraph~", "nfilters", 1, 9, "obj-16", "filtergraph~", "setoptions", 0, 1, 1, 0, 0, 8, "obj-16", "filtergraph~", "params", 0, 410.80438232421875, 0.7147576212883, 0.5, 5, "obj-19", "attrui", "attr", "edit_mode", 5, "obj-19", "attrui", "int", 1, 5, "obj-23", "flonum", "float", 5000.0, 5, "obj-25", "flonum", "float", 0.5, 5, "obj-35", "filtergraph~", "nfilters", 1, 9, "obj-35", "filtergraph~", "setoptions", 0, 1, 1, 0, 0, 8, "obj-35", "filtergraph~", "params", 0, 464.28875732421875, 0.283584207296371, 0.5, 5, "obj-33", "attrui", "attr", "edit_mode", 5, "obj-33", "attrui", "int", 1, 5, "obj-31", "flonum", "float", 5000.0, 5, "obj-30", "flonum", "float", 0.5, 5, "obj-39", "flonum", "float", 65.406394958496094, 5, "obj-45", "flonum", "float", 0.740000009536743, 5, "obj-53", "flonum", "float", 0.180000007152557, 5, "obj-55", "flonum", "float", 0.056000001728535, 5, "obj-59", "flonum", "float", 0.264999985694885, 5, "obj-61", "kslider", "int", 36 ]
+						}
+, 						{
+							"number" : 3,
+							"data" : [ 5, "obj-29", "live.gain~", "float", -20.745615005493164, 5, "obj-9", "live.slider", "float", 0.62515652179718, 5, "obj-16", "filtergraph~", "nfilters", 1, 9, "obj-16", "filtergraph~", "setoptions", 0, 1, 1, 0, 0, 8, "obj-16", "filtergraph~", "params", 0, 1014.9111328125, 3.840331554412842, 0.5, 5, "obj-19", "attrui", "attr", "edit_mode", 5, "obj-19", "attrui", "int", 1, 5, "obj-23", "flonum", "float", 5000.0, 5, "obj-25", "flonum", "float", 0.5, 5, "obj-35", "filtergraph~", "nfilters", 1, 9, "obj-35", "filtergraph~", "setoptions", 0, 1, 1, 0, 0, 8, "obj-35", "filtergraph~", "params", 0, 1779.03271484375, 1.898007750511169, 0.5, 5, "obj-33", "attrui", "attr", "edit_mode", 5, "obj-33", "attrui", "int", 1, 5, "obj-31", "flonum", "float", 5000.0, 5, "obj-30", "flonum", "float", 0.5, 5, "obj-39", "flonum", "float", 97.998855590820312, 5, "obj-45", "flonum", "float", 0.740000009536743, 5, "obj-53", "flonum", "float", 0.180000007152557, 5, "obj-55", "flonum", "float", 0.056000001728535, 5, "obj-59", "flonum", "float", 0.264999985694885, 5, "obj-61", "kslider", "int", 43 ]
+						}
+, 						{
+							"number" : 4,
+							"data" : [ 5, "obj-29", "live.gain~", "float", -20.745615005493164, 5, "obj-9", "live.slider", "float", 0.03586183860898, 5, "obj-16", "filtergraph~", "nfilters", 1, 9, "obj-16", "filtergraph~", "setoptions", 0, 1, 1, 0, 0, 8, "obj-16", "filtergraph~", "params", 0, 1014.9111328125, 3.840331554412842, 0.5, 5, "obj-19", "attrui", "attr", "edit_mode", 5, "obj-19", "attrui", "int", 1, 5, "obj-23", "flonum", "float", 5000.0, 5, "obj-25", "flonum", "float", 0.5, 5, "obj-35", "filtergraph~", "nfilters", 1, 9, "obj-35", "filtergraph~", "setoptions", 0, 1, 1, 0, 0, 8, "obj-35", "filtergraph~", "params", 0, 1779.03271484375, 1.898007750511169, 0.5, 5, "obj-33", "attrui", "attr", "edit_mode", 5, "obj-33", "attrui", "int", 1, 5, "obj-31", "flonum", "float", 5000.0, 5, "obj-30", "flonum", "float", 0.5, 5, "obj-39", "flonum", "float", 97.998855590820312, 5, "obj-45", "flonum", "float", 0.740000009536743, 5, "obj-53", "flonum", "float", 0.180000007152557, 5, "obj-55", "flonum", "float", 0.056000001728535, 5, "obj-59", "flonum", "float", 0.264999985694885, 5, "obj-61", "kslider", "int", 43 ]
+						}
+, 						{
+							"number" : 5,
+							"data" : [ 5, "obj-29", "live.gain~", "float", -20.745615005493164, 5, "obj-9", "live.slider", "float", 0.83840000629425, 5, "obj-16", "filtergraph~", "nfilters", 1, 9, "obj-16", "filtergraph~", "setoptions", 0, 1, 1, 0, 0, 8, "obj-16", "filtergraph~", "params", 0, 5000.0, 0.7147576212883, 0.5, 5, "obj-19", "attrui", "attr", "edit_mode", 5, "obj-19", "attrui", "int", 1, 5, "obj-23", "flonum", "float", 5000.0, 5, "obj-25", "flonum", "float", 0.5, 5, "obj-35", "filtergraph~", "nfilters", 1, 9, "obj-35", "filtergraph~", "setoptions", 0, 1, 1, 0, 0, 8, "obj-35", "filtergraph~", "params", 0, 5000.0, 0.283584207296371, 0.5, 5, "obj-33", "attrui", "attr", "edit_mode", 5, "obj-33", "attrui", "int", 1, 5, "obj-31", "flonum", "float", 5000.0, 5, "obj-30", "flonum", "float", 0.5, 5, "obj-39", "flonum", "float", 82.406890869140625, 5, "obj-45", "flonum", "float", 0.740000009536743, 5, "obj-53", "flonum", "float", 0.180000007152557, 5, "obj-55", "flonum", "float", 0.056000001728535, 5, "obj-59", "flonum", "float", 0.264999985694885, 5, "obj-61", "kslider", "int", 40, 5, "obj-75", "number", "int", 40 ]
+						}
+, 						{
+							"number" : 6,
+							"data" : [ 5, "obj-29", "live.gain~", "float", -28.842376708984375, 5, "obj-9", "live.slider", "float", 0.100400000810623, 5, "obj-16", "filtergraph~", "nfilters", 1, 9, "obj-16", "filtergraph~", "setoptions", 0, 1, 1, 0, 0, 8, "obj-16", "filtergraph~", "params", 0, 487.574951171875, 0.155544474720955, 0.5, 5, "obj-19", "attrui", "attr", "edit_mode", 5, "obj-19", "attrui", "int", 1, 5, "obj-23", "flonum", "float", 5000.0, 5, "obj-25", "flonum", "float", 0.5, 5, "obj-35", "filtergraph~", "nfilters", 1, 9, "obj-35", "filtergraph~", "setoptions", 0, 1, 1, 0, 0, 8, "obj-35", "filtergraph~", "params", 0, 391.169708251953125, 0.215908959507942, 0.5, 5, "obj-33", "attrui", "attr", "edit_mode", 5, "obj-33", "attrui", "int", 1, 5, "obj-31", "flonum", "float", 5000.0, 5, "obj-30", "flonum", "float", 0.5, 5, "obj-39", "flonum", "float", 77.781745910644531, 5, "obj-45", "flonum", "float", 0.740000009536743, 5, "obj-53", "flonum", "float", 0.180000007152557, 5, "obj-55", "flonum", "float", 0.056000001728535, 5, "obj-59", "flonum", "float", 0.264999985694885, 5, "obj-61", "kslider", "int", 39, 5, "obj-75", "number", "int", 39 ]
+						}
+, 						{
+							"number" : 7,
+							"data" : [ 5, "obj-29", "live.gain~", "float", -20.745615005493164, 5, "obj-9", "live.slider", "float", 0.763475358486176, 5, "obj-16", "filtergraph~", "nfilters", 1, 9, "obj-16", "filtergraph~", "setoptions", 0, 1, 1, 0, 0, 8, "obj-16", "filtergraph~", "params", 0, 5000.0, 4.518402099609375, 0.5, 5, "obj-19", "attrui", "attr", "edit_mode", 5, "obj-19", "attrui", "int", 1, 5, "obj-23", "flonum", "float", 5000.0, 5, "obj-25", "flonum", "float", 0.5, 5, "obj-35", "filtergraph~", "nfilters", 1, 9, "obj-35", "filtergraph~", "setoptions", 0, 1, 1, 0, 0, 8, "obj-35", "filtergraph~", "params", 0, 5000.0, 0.768420875072479, 0.5, 5, "obj-33", "attrui", "attr", "edit_mode", 5, "obj-33", "attrui", "int", 1, 5, "obj-31", "flonum", "float", 5000.0, 5, "obj-30", "flonum", "float", 0.5, 5, "obj-39", "flonum", "float", 65.406394958496094, 5, "obj-45", "flonum", "float", 0.680000007152557, 5, "obj-53", "flonum", "float", 0.007000000216067, 5, "obj-55", "flonum", "float", 0.056000001728535, 5, "obj-59", "flonum", "float", 0.264999985694885, 5, "obj-61", "kslider", "int", 36, 5, "obj-75", "number", "int", 36 ]
+						}
+, 						{
+							"number" : 8,
+							"data" : [ 5, "obj-29", "live.gain~", "float", -20.745615005493164, 5, "obj-9", "live.slider", "float", 0.763475358486176, 5, "obj-16", "filtergraph~", "nfilters", 1, 9, "obj-16", "filtergraph~", "setoptions", 0, 1, 1, 0, 0, 8, "obj-16", "filtergraph~", "params", 0, 2383.928466796875, 1.702929735183716, 0.5, 5, "obj-19", "attrui", "attr", "edit_mode", 5, "obj-19", "attrui", "int", 1, 5, "obj-23", "flonum", "float", 5000.0, 5, "obj-25", "flonum", "float", 0.5, 5, "obj-35", "filtergraph~", "nfilters", 1, 9, "obj-35", "filtergraph~", "setoptions", 0, 1, 1, 0, 0, 8, "obj-35", "filtergraph~", "params", 0, 1092.0303955078125, 0.438308984041214, 0.5, 5, "obj-33", "attrui", "attr", "edit_mode", 5, "obj-33", "attrui", "int", 1, 5, "obj-31", "flonum", "float", 5000.0, 5, "obj-30", "flonum", "float", 0.5, 5, "obj-39", "flonum", "float", 65.406394958496094, 5, "obj-45", "flonum", "float", 0.680000007152557, 5, "obj-53", "flonum", "float", 0.007000000216067, 5, "obj-55", "flonum", "float", 0.056000001728535, 5, "obj-59", "flonum", "float", 0.264999985694885, 5, "obj-61", "kslider", "int", 36, 5, "obj-75", "number", "int", 36 ]
+						}
+, 						{
+							"number" : 9,
+							"data" : [ 5, "obj-29", "live.gain~", "float", -20.745615005493164, 5, "obj-9", "live.slider", "float", 0.763475358486176, 5, "obj-16", "filtergraph~", "nfilters", 1, 9, "obj-16", "filtergraph~", "setoptions", 0, 1, 1, 0, 0, 8, "obj-16", "filtergraph~", "params", 0, 228.024063110351562, 0.164293274283409, 0.5, 5, "obj-19", "attrui", "attr", "edit_mode", 5, "obj-19", "attrui", "int", 1, 5, "obj-23", "flonum", "float", 5000.0, 5, "obj-25", "flonum", "float", 0.5, 5, "obj-35", "filtergraph~", "nfilters", 1, 9, "obj-35", "filtergraph~", "setoptions", 0, 1, 1, 0, 0, 8, "obj-35", "filtergraph~", "params", 0, 2564.86962890625, 2.115411758422852, 0.5, 5, "obj-33", "attrui", "attr", "edit_mode", 5, "obj-33", "attrui", "int", 1, 5, "obj-31", "flonum", "float", 5000.0, 5, "obj-30", "flonum", "float", 0.5, 5, "obj-39", "flonum", "float", 77.781745910644531, 5, "obj-45", "flonum", "float", 1.409999966621399, 5, "obj-53", "flonum", "float", 0.232999995350838, 5, "obj-55", "flonum", "float", 0.056000001728535, 5, "obj-59", "flonum", "float", 0.264999985694885, 5, "obj-61", "kslider", "int", 39, 5, "obj-75", "number", "int", 39 ]
+						}
+, 						{
+							"number" : 10,
+							"data" : [ 5, "obj-29", "live.gain~", "float", -20.745615005493164, 5, "obj-9", "live.slider", "float", 0.827600002288818, 5, "obj-16", "filtergraph~", "nfilters", 1, 9, "obj-16", "filtergraph~", "setoptions", 0, 1, 1, 0, 0, 8, "obj-16", "filtergraph~", "params", 0, 5000.0, 0.164293274283409, 0.5, 5, "obj-19", "attrui", "attr", "edit_mode", 5, "obj-19", "attrui", "int", 1, 5, "obj-23", "flonum", "float", 5000.0, 5, "obj-25", "flonum", "float", 0.5, 5, "obj-35", "filtergraph~", "nfilters", 1, 9, "obj-35", "filtergraph~", "setoptions", 0, 1, 1, 0, 0, 8, "obj-35", "filtergraph~", "params", 0, 5000.0, 2.115411758422852, 0.5, 5, "obj-33", "attrui", "attr", "edit_mode", 5, "obj-33", "attrui", "int", 1, 5, "obj-31", "flonum", "float", 5000.0, 5, "obj-30", "flonum", "float", 0.5, 5, "obj-39", "flonum", "float", 77.781745910644531, 5, "obj-45", "flonum", "float", 2.109999895095825, 5, "obj-53", "flonum", "float", 0.232999995350838, 5, "obj-55", "flonum", "float", 0.056000001728535, 5, "obj-59", "flonum", "float", 0.264999985694885, 5, "obj-61", "kslider", "int", 39, 5, "obj-75", "number", "int", 39 ]
+						}
+, 						{
+							"number" : 11,
+							"data" : [ 5, "obj-29", "live.gain~", "float", -20.745615005493164, 5, "obj-9", "live.slider", "float", 0.827600002288818, 5, "obj-16", "filtergraph~", "nfilters", 1, 9, "obj-16", "filtergraph~", "setoptions", 0, 1, 1, 0, 0, 8, "obj-16", "filtergraph~", "params", 0, 5000.0, 0.084991000592709, 0.5, 5, "obj-19", "attrui", "attr", "edit_mode", 5, "obj-19", "attrui", "int", 1, 5, "obj-23", "flonum", "float", 5000.0, 5, "obj-25", "flonum", "float", 0.5, 5, "obj-35", "filtergraph~", "nfilters", 1, 9, "obj-35", "filtergraph~", "setoptions", 0, 1, 1, 0, 0, 8, "obj-35", "filtergraph~", "params", 0, 169.7069091796875, 3.637717723846436, 0.5, 5, "obj-33", "attrui", "attr", "edit_mode", 5, "obj-33", "attrui", "int", 1, 5, "obj-31", "flonum", "float", 5000.0, 5, "obj-30", "flonum", "float", 0.5, 5, "obj-39", "flonum", "float", 65.406394958496094, 5, "obj-45", "flonum", "float", 2.109999895095825, 5, "obj-53", "flonum", "float", 0.232999995350838, 5, "obj-55", "flonum", "float", 0.210999995470047, 5, "obj-59", "flonum", "float", 0.264999985694885, 5, "obj-61", "kslider", "int", 36, 5, "obj-75", "number", "int", 36 ]
+						}
+, 						{
+							"number" : 12,
+							"data" : [ 5, "obj-29", "live.gain~", "float", -20.745615005493164, 5, "obj-9", "live.slider", "float", 0.908432602882385, 5, "obj-16", "filtergraph~", "nfilters", 1, 9, "obj-16", "filtergraph~", "setoptions", 0, 1, 1, 0, 0, 8, "obj-16", "filtergraph~", "params", 0, 5000.0, 0.084991000592709, 0.5, 5, "obj-19", "attrui", "attr", "edit_mode", 5, "obj-19", "attrui", "int", 1, 5, "obj-23", "flonum", "float", 5000.0, 5, "obj-25", "flonum", "float", 0.5, 5, "obj-35", "filtergraph~", "nfilters", 1, 9, "obj-35", "filtergraph~", "setoptions", 0, 1, 1, 0, 0, 8, "obj-35", "filtergraph~", "params", 0, 169.7069091796875, 3.637717723846436, 0.5, 5, "obj-33", "attrui", "attr", "edit_mode", 5, "obj-33", "attrui", "int", 1, 5, "obj-31", "flonum", "float", 5000.0, 5, "obj-30", "flonum", "float", 0.5, 5, "obj-39", "flonum", "float", 82.406890869140625, 5, "obj-45", "flonum", "float", 0.002000000094995, 5, "obj-53", "flonum", "float", 0.232999995350838, 5, "obj-55", "flonum", "float", 0.210999995470047, 5, "obj-59", "flonum", "float", 0.264999985694885, 5, "obj-61", "kslider", "int", 40, 5, "obj-75", "number", "int", 40 ]
+						}
+, 						{
+							"number" : 13,
+							"data" : [ 5, "obj-29", "live.gain~", "float", -20.745615005493164, 5, "obj-9", "live.slider", "float", 0.535170793533325, 5, "obj-16", "filtergraph~", "nfilters", 1, 9, "obj-16", "filtergraph~", "setoptions", 0, 1, 1, 0, 0, 8, "obj-16", "filtergraph~", "params", 0, 5000.0, 3.637717723846436, 0.5, 5, "obj-19", "attrui", "attr", "edit_mode", 5, "obj-19", "attrui", "int", 1, 5, "obj-23", "flonum", "float", 5000.0, 5, "obj-25", "flonum", "float", 0.5, 5, "obj-35", "filtergraph~", "nfilters", 1, 9, "obj-35", "filtergraph~", "setoptions", 0, 1, 1, 0, 0, 8, "obj-35", "filtergraph~", "params", 0, 5000.0, 2.357697010040283, 0.5, 5, "obj-33", "attrui", "attr", "edit_mode", 5, "obj-33", "attrui", "int", 1, 5, "obj-31", "flonum", "float", 5000.0, 5, "obj-30", "flonum", "float", 0.5, 5, "obj-39", "flonum", "float", 77.781745910644531, 5, "obj-45", "flonum", "float", 0.248999997973442, 5, "obj-53", "flonum", "float", 2.740000009536743, 5, "obj-55", "flonum", "float", 0.210999995470047, 5, "obj-59", "flonum", "float", 0.264999985694885, 5, "obj-61", "kslider", "int", 39, 5, "obj-75", "number", "int", 39 ]
 						}
  ]
 				}
@@ -301,7 +409,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 57.333335041999817, 55.666657090187073, 41.0, 22.0 ],
+					"patching_rect" : [ 245.333335041999817, 16.666657090187073, 41.0, 22.0 ],
 					"text" : "r pitch"
 				}
 
@@ -728,7 +836,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 428.833338141441345, 789.333344101905823, 96.0, 22.0 ],
+					"patching_rect" : [ 894.261909570012904, 491.333344101905823, 96.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -746,7 +854,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 977.333338141441345, 511.666678547859192, 88.0, 20.0 ],
+					"patching_rect" : [ 1442.761909570012904, 213.666678547859192, 88.0, 20.0 ],
 					"text" : "Body filter"
 				}
 
@@ -760,7 +868,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1083.833338141441345, 538.666678547859192, 50.0, 22.0 ]
+					"patching_rect" : [ 1549.261909570012904, 240.666678547859192, 50.0, 22.0 ]
 				}
 
 			}
@@ -773,7 +881,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1009.26190957001279, 538.666678547859192, 50.0, 22.0 ]
+					"patching_rect" : [ 1474.690480998584462, 240.666678547859192, 50.0, 22.0 ]
 				}
 
 			}
@@ -783,7 +891,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 822.833338141441345, 538.666678547859192, 150.0, 20.0 ],
+					"patching_rect" : [ 1288.261909570012904, 240.666678547859192, 150.0, 20.0 ],
 					"text" : "<attrui>"
 				}
 
@@ -797,7 +905,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 822.833338141441345, 569.666678547859192, 193.0, 22.0 ]
+					"patching_rect" : [ 1288.261909570012904, 271.666678547859192, 193.0, 22.0 ]
 				}
 
 			}
@@ -807,7 +915,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1109.333338141441345, 658.666678547859192, 76.0, 20.0 ],
+					"patching_rect" : [ 1574.761909570012904, 360.666678547859192, 76.0, 20.0 ],
 					"text" : "<filtergraph>"
 				}
 
@@ -822,8 +930,8 @@
 					"numoutlets" : 7,
 					"outlettype" : [ "list", "float", "float", "float", "float", "list", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 822.833338141441345, 617.666678547859192, 280.0, 102.0 ],
-					"setfilter" : [ 0, 1, 1, 0, 0, 5000.0, 0.768420875072479, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
+					"patching_rect" : [ 1288.261909570012904, 319.666678547859192, 280.0, 102.0 ],
+					"setfilter" : [ 0, 1, 1, 0, 0, 5000.0, 2.357697010040283, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
 				}
 
 			}
@@ -833,7 +941,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 583.333338141441345, 511.666678547859192, 88.0, 20.0 ],
+					"patching_rect" : [ 1048.761909570012904, 213.666678547859192, 88.0, 20.0 ],
 					"text" : "Reflection filter"
 				}
 
@@ -847,7 +955,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 689.833338141441345, 538.666678547859192, 50.0, 22.0 ]
+					"patching_rect" : [ 1155.261909570012904, 240.666678547859192, 50.0, 22.0 ]
 				}
 
 			}
@@ -860,7 +968,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 615.26190957001279, 538.666678547859192, 50.0, 22.0 ]
+					"patching_rect" : [ 1080.690480998584462, 240.666678547859192, 50.0, 22.0 ]
 				}
 
 			}
@@ -870,7 +978,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 428.833338141441345, 538.666678547859192, 150.0, 20.0 ],
+					"patching_rect" : [ 894.261909570012904, 240.666678547859192, 150.0, 20.0 ],
 					"text" : "<attrui>"
 				}
 
@@ -884,7 +992,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 428.833338141441345, 569.666678547859192, 193.0, 22.0 ]
+					"patching_rect" : [ 894.261909570012904, 271.666678547859192, 193.0, 22.0 ]
 				}
 
 			}
@@ -894,7 +1002,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 715.333338141441345, 658.666678547859192, 76.0, 20.0 ],
+					"patching_rect" : [ 1180.761909570012904, 360.666678547859192, 76.0, 20.0 ],
 					"text" : "<filtergraph>"
 				}
 
@@ -909,8 +1017,8 @@
 					"numoutlets" : 7,
 					"outlettype" : [ "list", "float", "float", "float", "float", "list", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 428.833338141441345, 617.666678547859192, 280.0, 102.0 ],
-					"setfilter" : [ 0, 1, 1, 0, 0, 5000.0, 0.768420875072479, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
+					"patching_rect" : [ 894.261909570012904, 319.666678547859192, 280.0, 102.0 ],
+					"setfilter" : [ 0, 1, 1, 0, 0, 5000.0, 3.637717723846436, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
 				}
 
 			}
@@ -921,7 +1029,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 493.333339691162109, 1008.333348035812378, 41.0, 22.0 ],
+					"patching_rect" : [ 958.761911119733668, 710.333348035812378, 41.0, 22.0 ],
 					"text" : "s data"
 				}
 
@@ -933,7 +1041,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 493.333339691162109, 966.333348035812378, 67.0, 22.0 ],
+					"patching_rect" : [ 958.761911119733668, 668.333348035812378, 67.0, 22.0 ],
 					"text" : "location $1"
 				}
 
@@ -944,7 +1052,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 702.333339691162109, 891.833348035812378, 42.0, 20.0 ],
+					"patching_rect" : [ 1167.761911119733668, 593.833348035812378, 42.0, 20.0 ],
 					"text" : "nut"
 				}
 
@@ -955,7 +1063,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 441.333339691162109, 891.833348035812378, 42.0, 20.0 ],
+					"patching_rect" : [ 906.761911119733668, 593.833348035812378, 42.0, 20.0 ],
 					"text" : "bridge"
 				}
 
@@ -969,7 +1077,7 @@
 					"orientation" : 1,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 493.333339691162109, 901.333348035812378, 200.0, 41.0 ],
+					"patching_rect" : [ 967.261909570012904, 603.333348035812378, 200.0, 41.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.slider",
@@ -993,7 +1101,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 289.333338141441345, 831.666678547859192, 39.0, 22.0 ],
+					"patching_rect" : [ 754.761909570012904, 533.666678547859192, 39.0, 22.0 ],
 					"text" : "r data"
 				}
 
@@ -1005,7 +1113,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 224.333338141441345, 831.666678547859192, 42.0, 22.0 ],
+					"patching_rect" : [ 689.761909570012904, 533.666678547859192, 42.0, 22.0 ],
 					"text" : "reload"
 				}
 
@@ -1019,7 +1127,7 @@
 					"numoutlets" : 5,
 					"outlettype" : [ "signal", "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 289.333338141441345, 949.666678547859192, 48.0, 136.0 ],
+					"patching_rect" : [ 754.761909570012904, 651.666678547859192, 48.0, 136.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.gain~",
@@ -1043,7 +1151,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 400.333338141441345, 1156.666678547859192, 68.0, 22.0 ],
+					"patching_rect" : [ 865.761909570012904, 858.666678547859192, 68.0, 22.0 ],
 					"text" : "send~ out2"
 				}
 
@@ -1055,7 +1163,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 289.333338141441345, 1156.666678547859192, 68.0, 22.0 ],
+					"patching_rect" : [ 754.761909570012904, 858.666678547859192, 68.0, 22.0 ],
 					"text" : "send~ out1"
 				}
 
@@ -1068,13 +1176,20 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 289.333338141441345, 894.666678547859192, 107.0, 22.0 ],
+					"patching_rect" : [ 754.761909570012904, 596.666678547859192, 107.0, 22.0 ],
 					"text" : "gen~ bowed.string"
 				}
 
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-13", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
 					"source" : [ "obj-14", 0 ]
@@ -1106,6 +1221,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-16", 5 ],
 					"source" : [ "obj-23", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-13", 0 ],
+					"source" : [ "obj-24", 0 ]
 				}
 
 			}
@@ -1177,6 +1299,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-43", 0 ],
+					"order" : 1,
+					"source" : [ "obj-42", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-61", 0 ],
+					"order" : 0,
 					"source" : [ "obj-42", 0 ]
 				}
 
@@ -1246,7 +1377,23 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-24", 0 ],
+					"source" : [ "obj-6", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-43", 0 ],
+					"order" : 1,
+					"source" : [ "obj-61", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-75", 0 ],
+					"order" : 0,
 					"source" : [ "obj-61", 0 ]
 				}
 

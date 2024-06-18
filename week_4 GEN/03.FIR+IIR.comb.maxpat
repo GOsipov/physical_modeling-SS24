@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 640.0, 194.0, 876.0, 180.0 ],
+		"rect" : [ 34.0, 100.0, 1444.0, 780.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,28 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 731.0, 656.0, 68.0, 22.0 ],
+					"text" : "send~ out2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 607.0, 656.0, 68.0, 22.0 ],
+					"text" : "send~ out1"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-50",
 					"maxclass" : "spectroscope~",
@@ -118,8 +140,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1284.1199951171875, 299.5, 150.0, 33.0 ],
-					"presentation_linecount" : 2,
-					"text" : "<== linear amplitude (0.-1.)"
+					"text" : "<== linear amplitude (0.\n1.)"
 				}
 
 			}
@@ -529,6 +550,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-27", 0 ],
+					"order" : 1,
+					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"order" : 0,
 					"source" : [ "obj-15", 0 ]
 				}
 
@@ -616,6 +646,15 @@
 				"patchline" : 				{
 					"destination" : [ "obj-50", 0 ],
 					"midpoints" : [ 786.5, 537.0, 438.0, 537.0, 438.0, 750.0, 137.5, 750.0 ],
+					"order" : 1,
+					"source" : [ "obj-39", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"order" : 0,
 					"source" : [ "obj-39", 0 ]
 				}
 
@@ -651,8 +690,8 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "my.IIR.comb.gendsp",
-				"bootpath" : "~/Desktop/Studio methods/_Classes/sound-synth-tech-SS24/week-4-modulation",
-				"patcherrelativepath" : "../../sound-synth-tech-SS24/week-4-modulation",
+				"bootpath" : "~/Desktop/Studio methods/_Classes/physical_modeling-SS24/week_4 GEN",
+				"patcherrelativepath" : ".",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
