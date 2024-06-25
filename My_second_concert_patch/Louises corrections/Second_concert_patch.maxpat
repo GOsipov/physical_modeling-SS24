@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 5,
-			"revision" : 6,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -408,7 +408,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 6,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -809,7 +809,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 6,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1434,7 +1434,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 6,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1674,7 +1674,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 6,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1710,6 +1710,21 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"fontface" : 2,
+									"id" : "obj-5",
+									"linecount" : 5,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 384.700005888938904, 314.400000512599945, 287.0, 74.0 ],
+									"presentation_linecount" : 3,
+									"text" : "These subpatches and abstractions need to be in the same folder as your main patch. On my computer, they do not load because I don't have the rest of your repository. Put them in the same folder as demonstrated in class in order for this to work.",
+									"textcolor" : [ 0.011765, 0.396078, 0.752941, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-47",
 									"maxclass" : "newobj",
 									"numinlets" : 0,
@@ -1723,9 +1738,8 @@
 								"box" : 								{
 									"id" : "obj-43",
 									"maxclass" : "newobj",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"numinlets" : 0,
+									"numoutlets" : 0,
 									"patching_rect" : [ 412.0, 437.0, 92.0, 22.0 ],
 									"text" : "11_Randomizer"
 								}
@@ -1742,7 +1756,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 5,
-											"revision" : 6,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -2277,7 +2291,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-8",
-									"items" : [ "IAC Driver Bus 1", ",", "IAC Driver Bus 2", ",", "IAC Driver Bus 3", ",", "to Max 1", ",", "to Max 2" ],
+									"items" : [ "Network korg", ",", "IAC Driver Bus 1", ",", "IAC Driver Bus 2", ",", "IAC Driver Bus 3", ",", "to Max 1", ",", "to Max 2" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -2476,13 +2490,13 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 6,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 34.0, 99.0, 678.0, 849.0 ],
+						"rect" : [ 34.0, 100.0, 678.0, 849.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2684,7 +2698,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 6,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3093,7 +3107,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 6,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3128,6 +3142,20 @@
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"fontface" : 2,
+									"id" : "obj-20",
+									"linecount" : 5,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ -196.299994111061096, 375.400000512599945, 287.0, 74.0 ],
+									"text" : "These subpatches and abstractions need to be in the same folder as your main patch. On my computer, they do not load because I don't have the rest of your repository. Put them in the same folder as demonstrated in class in order for this to work.",
+									"textcolor" : [ 0.011765, 0.396078, 0.752941, 1.0 ]
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"basictuning" : 440,
 									"clipheight" : 91.0,
@@ -3402,9 +3430,8 @@
 								"box" : 								{
 									"id" : "obj-13",
 									"maxclass" : "newobj",
-									"numinlets" : 3,
-									"numoutlets" : 1,
-									"outlettype" : [ "signal" ],
+									"numinlets" : 0,
+									"numoutlets" : 0,
 									"patching_rect" : [ 12.700005888938904, 456.0, 78.0, 22.0 ],
 									"text" : "lg.vol.util.v01"
 								}
@@ -3733,7 +3760,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 6,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3779,7 +3806,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 5,
-											"revision" : 6,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -3946,7 +3973,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 5,
-											"revision" : 6,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -4113,7 +4140,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 5,
-											"revision" : 6,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -4273,13 +4300,13 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 5,
-											"revision" : 6,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 34.0, 99.0, 678.0, 849.0 ],
+										"rect" : [ 34.0, 100.0, 678.0, 849.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -4433,13 +4460,13 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 5,
-											"revision" : 6,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 34.0, 99.0, 420.0, 849.0 ],
+										"rect" : [ 34.0, 100.0, 420.0, 849.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -4600,7 +4627,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 5,
-											"revision" : 6,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -4911,7 +4938,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 5,
-											"revision" : 6,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -5340,7 +5367,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 6,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -5374,7 +5401,22 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"fontface" : 2,
+									"id" : "obj-3",
+									"linecount" : 5,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 403.700005888938904, 436.400000512599945, 287.0, 74.0 ],
+									"text" : "These subpatches and abstractions need to be in the same folder as your main patch. On my computer, they do not load because I don't have the rest of your repository. Put them in the same folder as demonstrated in class in order for this to work.",
+									"textcolor" : [ 0.011765, 0.396078, 0.752941, 1.0 ]
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"channels" : 1,
 									"id" : "obj-5",
@@ -5417,9 +5459,9 @@
 								"box" : 								{
 									"id" : "obj-7",
 									"maxclass" : "newobj",
-									"numinlets" : 3,
+									"numinlets" : 1,
 									"numoutlets" : 1,
-									"outlettype" : [ "signal" ],
+									"outlettype" : [ "" ],
 									"patching_rect" : [ 171.0, 466.0, 227.0, 22.0 ],
 									"text" : "lg.vol.util.v01"
 								}
@@ -5536,7 +5578,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 6,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -6076,101 +6118,38 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "10.How_to_Steal_In_Max.v1.maxpat",
-				"bootpath" : "~/Desktop/Studio methods/_Classes/physical_modeling-SS24/My_second_concert_patch",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "11_Randomizer.maxpat",
-				"bootpath" : "~/Desktop/Studio methods/_Classes/physical_modeling-SS24/My_second_concert_patch",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Arrow-Left-v01.png",
-				"bootpath" : "~/Desktop/Studio methods/_Classes/sound-synth-tech-SS24-v01/week_9-concert-patch/MHL-CAO-spat-boiler-master/magnum.opus.boiler.v03/UX-figma-v01-master",
-				"patcherrelativepath" : "../../sound-synth-tech-SS24-v01/week_9-concert-patch/MHL-CAO-spat-boiler-master/magnum.opus.boiler.v03/UX-figma-v01-master",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Arrow-Right-v01.png",
-				"bootpath" : "~/Desktop/Studio methods/_Classes/sound-synth-tech-SS24-v01/week_9-concert-patch/MHL-CAO-spat-boiler-master/magnum.opus.boiler.v03/UX-figma-v01-master",
-				"patcherrelativepath" : "../../sound-synth-tech-SS24-v01/week_9-concert-patch/MHL-CAO-spat-boiler-master/magnum.opus.boiler.v03/UX-figma-v01-master",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Arrow-init-v01.png",
-				"bootpath" : "~/Desktop/Studio methods/_Classes/sound-synth-tech-SS24-v01/week_9-concert-patch/MHL-CAO-spat-boiler-master/magnum.opus.boiler.v03/UX-figma-v01-master",
-				"patcherrelativepath" : "../../sound-synth-tech-SS24-v01/week_9-concert-patch/MHL-CAO-spat-boiler-master/magnum.opus.boiler.v03/UX-figma-v01-master",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "Funny.formant.modeling.parent.patch.maxpat",
-				"bootpath" : "~/Desktop/Studio methods/_Classes/physical_modeling-SS24/My_second_concert_patch",
+				"bootpath" : "~/Desktop/myClasses/z.divers/_phys.mod.planning/grading/checkpoint-02/grigoii.physical_modeling-SS24-main/My_second_concert_patch",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Play.png",
-				"bootpath" : "~/Desktop/Studio methods/_Classes/sound-synth-tech-SS24-v01/week_9-concert-patch/MHL-CAO-spat-boiler-master/magnum.opus.boiler.v03/UX-figma-v01-master",
-				"patcherrelativepath" : "../../sound-synth-tech-SS24-v01/week_9-concert-patch/MHL-CAO-spat-boiler-master/magnum.opus.boiler.v03/UX-figma-v01-master",
-				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "formant.polyCore.maxpat",
-				"bootpath" : "~/Desktop/Studio methods/_Classes/physical_modeling-SS24/My_second_concert_patch",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/Max 8/Library/ein.synthesis.techniques/analysis/formants/formants.reson.patches",
+				"patcherrelativepath" : "../../../../../../../../Documents/Max 8/Library/ein.synthesis.techniques/analysis/formants/formants.reson.patches",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "lg.vol.util.v01.maxpat",
-				"bootpath" : "~/Desktop/Studio methods/_Classes/sound-synth-tech-SS24-v01/week_9-concert-patch/MHL-CAO-spat-boiler-master/magnum.opus.boiler.v03",
-				"patcherrelativepath" : "../../sound-synth-tech-SS24-v01/week_9-concert-patch/MHL-CAO-spat-boiler-master/magnum.opus.boiler.v03",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "road-sign-stop.png",
-				"bootpath" : "~/Desktop/Studio methods/_Classes/sound-synth-tech-SS24-v01/week_9-concert-patch/MHL-CAO-spat-boiler-master/magnum.opus.boiler.v03/UX-figma-v01-master",
-				"patcherrelativepath" : "../../sound-synth-tech-SS24-v01/week_9-concert-patch/MHL-CAO-spat-boiler-master/magnum.opus.boiler.v03/UX-figma-v01-master",
-				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "z.CMC-logo300dpi.2x.gif",
-				"bootpath" : "~/Desktop/Studio methods/_Classes/sound-synth-tech-SS24-v01/week_9-concert-patch/MHL-CAO-spat-boiler-master/magnum.opus.boiler.v03",
-				"patcherrelativepath" : "../../sound-synth-tech-SS24-v01/week_9-concert-patch/MHL-CAO-spat-boiler-master/magnum.opus.boiler.v03",
+				"bootpath" : "~/Documents/Max 8/Library/ein.synthesis.techniques/analysis/formants/formants.reson.patches",
+				"patcherrelativepath" : "../../../../../../../../Documents/Max 8/Library/ein.synthesis.techniques/analysis/formants/formants.reson.patches",
 				"type" : "GIFf",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "z.by-sa.2x.png",
-				"bootpath" : "~/Desktop/Studio methods/_Classes/sound-synth-tech-SS24-v01/week_9-concert-patch/MHL-CAO-spat-boiler-master/magnum.opus.boiler.v03",
-				"patcherrelativepath" : "../../sound-synth-tech-SS24-v01/week_9-concert-patch/MHL-CAO-spat-boiler-master/magnum.opus.boiler.v03",
+				"bootpath" : "~/Documents/Max 8/Library/ein.synthesis.techniques/analysis/formants/formants.reson.patches",
+				"patcherrelativepath" : "../../../../../../../../Documents/Max 8/Library/ein.synthesis.techniques/analysis/formants/formants.reson.patches",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "z.credits.v01.bp.maxpat",
-				"bootpath" : "~/Desktop/Studio methods/_Classes/sound-synth-tech-SS24-v01/week_9-concert-patch/MHL-CAO-spat-boiler-master/magnum.opus.boiler.v03",
-				"patcherrelativepath" : "../../sound-synth-tech-SS24-v01/week_9-concert-patch/MHL-CAO-spat-boiler-master/magnum.opus.boiler.v03",
+				"bootpath" : "~/Documents/Max 8/Library/ein.synthesis.techniques/analysis/formants/formants.reson.patches",
+				"patcherrelativepath" : "../../../../../../../../Documents/Max 8/Library/ein.synthesis.techniques/analysis/formants/formants.reson.patches",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Триглинки.WAV",
-				"bootpath" : "~/Desktop/Music/Квартирник Триглинки",
-				"patcherrelativepath" : "../../../../Music/Квартирник Триглинки",
-				"type" : "WAVE",
 				"implicit" : 1
 			}
  ],

@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 5,
-			"revision" : 6,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 161.0, 892.0, 659.0 ],
+		"rect" : [ 112.0, 172.0, 1099.0, 657.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,36 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontface" : 2,
+					"fontname" : "Arial",
+					"id" : "obj-37",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 813.0, 466.438579698779904, 261.0, 60.0 ],
+					"text" : "Use the Csound data given on the website posted on our Schedule Page to make more than one vowel sound. The vowel data is given on the website! Make the formants dynamic!",
+					"textcolor" : [ 0.011765, 0.396078, 0.752941, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 2,
+					"fontname" : "Arial",
+					"id" : "obj-12",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 290.0, 22.0, 213.0, 60.0 ],
+					"text" : "Be sure to change <loadmess> and <loadbang> objects into <r> objects (send your initialization messages from your events instead).",
+					"textcolor" : [ 0.011765, 0.396078, 0.752941, 1.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-77",
 					"maxclass" : "newobj",
@@ -407,6 +437,7 @@
 			}
 , 			{
 				"box" : 				{
+					"color" : [ 0.784314, 0.145098, 0.023529, 1.0 ],
 					"id" : "obj-64",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -444,6 +475,7 @@
 			}
 , 			{
 				"box" : 				{
+					"color" : [ 0.784314, 0.145098, 0.023529, 1.0 ],
 					"id" : "obj-48",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -578,6 +610,7 @@
 			}
 , 			{
 				"box" : 				{
+					"color" : [ 0.784314, 0.145098, 0.023529, 1.0 ],
 					"id" : "obj-52",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -766,7 +799,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "signal", "", "", "" ],
-					"patching_rect" : [ 608.200000000000045, 319.146193232926635, 143.0, 22.0 ],
+					"patching_rect" : [ 600.200000000000045, 323.292386465853269, 143.0, 22.0 ],
 					"text" : "poly~ formant.polyCore 5"
 				}
 
@@ -1030,6 +1063,7 @@
 			}
 , 			{
 				"box" : 				{
+					"color" : [ 0.784314, 0.145098, 0.023529, 1.0 ],
 					"id" : "obj-93",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -1042,6 +1076,7 @@
 			}
 , 			{
 				"box" : 				{
+					"color" : [ 0.784314, 0.145098, 0.023529, 1.0 ],
 					"id" : "obj-80",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -1067,6 +1102,7 @@
 			}
 , 			{
 				"box" : 				{
+					"color" : [ 0.784314, 0.145098, 0.023529, 1.0 ],
 					"id" : "obj-71",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -1713,7 +1749,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
-					"midpoints" : [ 159.5, 570.0, 222.0, 570.0, 222.0, 321.0, 585.0, 321.0, 585.0, 309.0, 617.700000000000045, 309.0 ],
+					"midpoints" : [ 159.5, 570.0, 222.0, 570.0, 222.0, 321.0, 585.0, 321.0, 585.0, 309.0, 609.700000000000045, 309.0 ],
 					"order" : 0,
 					"source" : [ "obj-59", 0 ]
 				}
